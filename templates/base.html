@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{%block 'titulo'%}{%endblock%}</title>
+    <link rel="stylesheet" href="{% static '/css/w3.css'%}" type="text/css"/>
+    <link rel="stylesheet" href="{% static '/css/estilos.css'%}" type="text/css"/>
+</head>
+<body class="w3-responsive">
+<nav class="w3-black w3-bar-block">
+    <a class="w3-btn w3-yellow" href="/">Agenda</a>
+    <a class="w3-btn" href="/admin">Admin</a>
+</nav>
+<section>
+    {%block 'conteudo'%}
+
+    {%endblock%}
+</section>
+<footer class="w3-center w3-black">LeoTech Informática - 2022</footer>
+</body>
+</html>
